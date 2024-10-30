@@ -5,6 +5,9 @@ void Window::onCreate() {
 }
 
 void Window::onPaintUI() {
+
+  int button_click = 99;
+
   // Get size of application's window
   auto const appWindowWidth{gsl::narrow<float>(getWindowSettings().width)};
   auto const appWindowHeight{gsl::narrow<float>(getWindowSettings().height)};
@@ -47,6 +50,7 @@ void Window::onPaintUI() {
                 auto buttonText{fmt::format("{}##{}{}", fg_value, i, j)}; // --
                 if (ImGui::Button(buttonText.c_str(), ImVec2(-1, buttonHeight))) {
                     m_button.at(offset) = fg_value;
+                    button_click = offset;
                 }
             }
             ImGui::Spacing();
@@ -56,11 +60,42 @@ void Window::onPaintUI() {
     }
 
     ImGui::Spacing();
-    }
-    
-    // TODO: Add exibir qual botão está selecionado
-    // TODO: Add formas geometricas
-    // TODO: Add janela que mostrará as formas geometricas
+  }
 
+  // TODO: Add janela que mostrará as formas geometricas -- 40% Feito
+  {
+    ImGui::SetNextWindowSize(ImVec2(appWindowWidth, appWindowHeight*(2/3)));
+    ImGui::SetNextWindowPos(ImVec2(0, (appWindowHeight/3)));
+
+    auto const flags{ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoResize |
+                     ImGuiWindowFlags_NoCollapse};
+    ImGui::Begin("Objetos", nullptr, flags);
+
+    // TODO: Add exibir qual botão está selecionado - 80% feito
+    //Se clicar um botão, chamar funcao que cria a figura geometrica correspondente
+    if (button_click == 0){
+      //variavel "sides" definindo os lados da figura geometrica
+      //poligono(sides)
+    }
+    if (button_click == 1){
+      //variavel "sides" definindo os lados da figura geometrica
+      //poligono(sides)
+    }
+    if (button_click == 3){
+      //variavel "sides" definindo os lados da figura geometrica
+      //poligono(sides)
+    }
+    //...
+
+    ImGui::Spacing();
     ImGui::End();
+  }
+    ImGui::End();
+}
+
+// Figuras geometricas
+// TODO: Add formas geometricas
+void Window::poligono(int sides){
+  fmt::print(stdout, "Ola mundo {}\n", sides);
+  // TODO: Desenvolver com base na funcao setupModel() da sessao 5.1
 }
