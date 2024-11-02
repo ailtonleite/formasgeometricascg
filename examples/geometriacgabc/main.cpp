@@ -7,6 +7,7 @@ int main(int argc, char **argv) {
 
     // Create OpenGL window
     Window window;
+    window.setOpenGLSettings({.samples = 2, .doubleBuffering = false});
     window.setWindowSettings({
       .width = 900, .height = 600,
       .title = "Geometria ABC"});
