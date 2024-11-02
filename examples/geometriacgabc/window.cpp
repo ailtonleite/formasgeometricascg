@@ -1,22 +1,27 @@
 #include "window.hpp"
 #include <abcgOpenGLWindow.hpp>
 
-void Window::onCreate() {
-  abcg::glEnable(GL_DEPTH_TEST);
+bool gerado = true;
+auto sides = 3;
 
-  // TODO: Ao iniciar a aplicacao, pré-selecionar a primeira forma geometrica (primeiro botão)
+void Window::onCreate() {
   auto const *vertexShader{R"gl(#version 300 es
 
-layout(location = 0) in vec2 inPosition;
-layout(location = 1) in vec4 inColor;
+    layout(location = 0) in vec2 inPosition;
+    layout(location = 1) in vec4 inColor;
 
-out vec4 fragColor;
+    uniform vec2 translation;
+    uniform float scale;
 
-void main() {
-  gl_Position = vec4(inPosition, 0.0, 1.0);
-  fragColor = inColor;
-})gl"};
-  
+    out vec4 fragColor;
+
+    void main() {
+      vec2 newPosition = inPosition * scale + translation;
+      gl_Position = vec4(newPosition, 0, 1);
+      fragColor = inColor;
+    }
+  )gl"};
+
   auto const *fragmentShader{R"gl(#version 300 es
 
     precision mediump float;  
@@ -33,24 +38,38 @@ void main() {
        {.source = fragmentShader, .stage = abcg::ShaderStage::Fragment}});
 
   abcg::glClearColor(0, 0, 0, 1);
-  abcg::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  abcg::glClear(GL_COLOR_BUFFER_BIT);
 
   m_randomEngine.seed(
       std::chrono::steady_clock::now().time_since_epoch().count());
-
-  // Seleciona um valor padrão para sides
-  m_sides = 3;
-  poligono(m_sides);
+  poligonos(3);
 }
 
 void Window::onPaint() {
+  if (gerado == false) return;
+
+  auto const m_sides = sides;
+  poligonos(m_sides);
+  gerado = false;
+
   abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
 
   abcg::glUseProgram(m_program);
 
+  // Mover objeto para baixo dos botões
+  glm::vec2 const translation{0.0f, -0.3f};
+  auto const translationLocation{
+      abcg::glGetUniformLocation(m_program, "translation")};
+  abcg::glUniform2fv(translationLocation, 1, &translation.x);
+
+  // Aumentar escala
+  auto const scale{0.4f};
+  auto const scaleLocation{abcg::glGetUniformLocation(m_program, "scale")};
+  abcg::glUniform1f(scaleLocation, scale);
+
   // Render
   abcg::glBindVertexArray(m_VAO);
-  abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, sides + 2);
+  abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, m_sides + 2);
   abcg::glBindVertexArray(0);
 
   abcg::glUseProgram(0);
@@ -60,7 +79,6 @@ void Window::onPaintUI() {
   abcg::OpenGLWindow::onPaintUI();
   
   int button_click = 99;
-  int sides = 3;
 
   // Get size of application's window
   auto const appWindowWidth{gsl::narrow<float>(getWindowSettings().width)};
@@ -88,7 +106,7 @@ void Window::onPaintUI() {
             "Pentagono", 
             "Hexagono", 
             "Circulo", 
-            "palavra6"};
+            "palavra6"}; // TODO: Criar uma forma geometrica não linear (estrela, meia lua, etc)
 
         // Use custom font
         if (ImGui::BeginTable("buttons", m_c)) {
@@ -116,68 +134,41 @@ void Window::onPaintUI() {
     ImGui::Spacing();
   }
 
-    // TODO: Add exibir qual botão está selecionado - 80% feito
+    // TODO: Add exibir qual botão está selecionado - FEITO
     //Se clicar um botão, chamar funcao que cria a figura geometrica correspondente
-    if (button_click == 0){
+    if (button_click == 0){ // TRINAGULO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 3;
-      poligono(sides);
+      gerado = true;
     }
-    if (button_click == 1){
+    if (button_click == 1){ // QUADRADO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 4;
-      poligono(sides);
+      gerado = true;
     }
-    if (button_click == 2){
+    if (button_click == 2){ // PENTAGONO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 5;
-      poligono(sides);
+      gerado = true;
     }
-    //...
+    if (button_click == 3){ // HEXAGONO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
+      sides = 6;
+      gerado = true;
+    }
+    if (button_click == 4){ // CIRCULO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
+      sides = 30;
+      gerado = true;
+    }
 
-  // TODO: Add janela que mostrará as formas geometricas -- 40% Feito
-  // {
-
-  //   ImGui::SetNextWindowSize(ImVec2(appWindowWidth, appWindowHeight));
-  //   ImGui::SetNextWindowPos(ImVec2(0, (appWindowHeight/3)));
-
-  //   auto const flags{ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoResize |
-  //                    ImGuiWindowFlags_NoCollapse};
-  //   ImGui::Begin("Objetos", nullptr, flags);
-
-  //   // TODO: Add exibir qual botão está selecionado - 80% feito
-  //   //Se clicar um botão, chamar funcao que cria a figura geometrica correspondente
-  //   if (button_click == 0){
-  //     sides = 3;
-  //     poligono(sides);
-  //   }
-  //   if (button_click == 1){
-  //     sides = 4;
-  //     poligono(sides);
-  //   }
-  //   if (button_click == 2){
-  //     sides = 5;
-  //     poligono(sides);
-  //   }
-  //   //...
-
-  //   abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
-  //   abcg::glUseProgram(m_program);
-
-  //   // Pick a random scale factor (1% to 25%)
-  //   std::uniform_real_distribution rd2(0.01f, 0.25f);
-  //   auto const scale{rd2(m_randomEngine)};
-  //   auto const scaleLocation{abcg::glGetUniformLocation(m_program, "scale")};
-  //   abcg::glUniform1f(scaleLocation, scale);
-
-  //   // Render
-  //   abcg::glBindVertexArray(m_VAO);
-  //   abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, sides + 2);
-  //   abcg::glBindVertexArray(0);
-
-  //   abcg::glUseProgram(0);
-
-  //   ImGui::Spacing();
-  //   ImGui::End();
-  // }
     ImGui::End();
+}
+
+void Window::onResize(glm::ivec2 const &size) {
+  m_viewportSize = size;
+
+  abcg::glClear(GL_COLOR_BUFFER_BIT);
 }
 
 void Window::onDestroy() {
@@ -188,10 +179,9 @@ void Window::onDestroy() {
 }
 
 // Figuras geometricas
-// TODO: Add formas geometricas
-void Window::poligono(int sides){
+void Window::poligonos(int sides){
   fmt::print(stdout, "Vertices {}\n", sides);
-  // TODO: Desenvolver com base na funcao setupModel() da sessao 5.1
+  // TODO: Desenvolver com base na funcao setupModel() da sessao 5.1 -- FEITO
   // Release previous resources, if any
   abcg::glDeleteBuffers(1, &m_VBOPositions);
   abcg::glDeleteBuffers(1, &m_VBOColors);
