@@ -1443,8 +1443,18 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/
   ../abcg/abcgShader.hpp \
   ../abcg/abcgOpenGLWindow.hpp \
   ../abcg/abcgOpenGLFunction.hpp \
-  ../abcg/abcgOpenGLWindow.hpp
+  ../abcg/abcgOpenGLWindow.hpp \
+  ../abcg/external/glm/gtx/fast_trigonometry.hpp \
+  ../abcg/external/glm/gtx/fast_trigonometry.inl \
+  ../abcg/external/glm/gtx/rotate_vector.hpp \
+  ../abcg/external/glm/gtx/transform.hpp \
+  ../abcg/external/glm/gtx/transform.inl \
+  ../abcg/external/glm/gtx/rotate_vector.inl
 
+
+../abcg/external/glm/gtx/rotate_vector.hpp:
+
+../abcg/external/glm/gtx/fast_trigonometry.inl:
 
 ../abcg/abcgOpenGLFunction.hpp:
 
@@ -1777,6 +1787,8 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/
 /usr/include/stdio.h:
 
 /usr/include/c++/11/cstdio:
+
+../abcg/external/glm/gtx/transform.hpp:
 
 /usr/include/c++/11/bits/max_size_type.h:
 
@@ -2118,6 +2130,8 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/
 
 /usr/include/linux/limits.h:
 
+../abcg/external/glm/gtx/fast_trigonometry.hpp:
+
 /usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
@@ -2446,6 +2460,8 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:
 
+../abcg/external/glm/gtx/transform.inl:
+
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/SDL2/SDL_assert.h:
@@ -2491,6 +2507,8 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h:
+
+../abcg/external/glm/gtx/rotate_vector.inl:
 
 /usr/include/SDL2/SDL_filesystem.h:
 

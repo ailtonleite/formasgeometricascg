@@ -635,4 +635,10 @@ examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgShader.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLFunction.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.hpp
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/fast_trigonometry.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/fast_trigonometry.inl \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/rotate_vector.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/transform.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/transform.inl \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/rotate_vector.inl

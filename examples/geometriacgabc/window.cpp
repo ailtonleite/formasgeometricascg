@@ -1,10 +1,16 @@
 #include "window.hpp"
 #include <abcgOpenGLWindow.hpp>
+#include <glm/gtx/fast_trigonometry.hpp>
+#include <glm/gtx/rotate_vector.hpp>
 
 bool gerado = true;
+bool linear = true;
 auto sides = 3;
 
 void Window::onCreate() {
+  m_rotation = 0.0f;
+  m_previousMousePosition = glm::ivec2(0, 0);
+
   auto const *vertexShader{R"gl(#version 300 es
 
     layout(location = 0) in vec2 inPosition;
@@ -12,11 +18,20 @@ void Window::onCreate() {
 
     uniform vec2 translation;
     uniform float scale;
+    uniform float rotation;
 
     out vec4 fragColor;
 
     void main() {
-      vec2 newPosition = inPosition * scale + translation;
+      // Apply rotation
+      float cosAngle = cos(rotation);
+      float sinAngle = sin(rotation);
+      vec2 rotatedPosition = vec2(
+        inPosition.x * cosAngle - inPosition.y * sinAngle,
+        inPosition.x * sinAngle + inPosition.y * cosAngle
+      );
+      
+      vec2 newPosition = rotatedPosition * scale + translation;
       gl_Position = vec4(newPosition, 0, 1);
       fragColor = inColor;
     }
@@ -45,34 +60,77 @@ void Window::onCreate() {
   poligonos(3);
 }
 
+void Window::onEvent(SDL_Event const &event) {
+  if (event.type == SDL_MOUSEMOTION) {
+    glm::ivec2 mousePosition;
+    SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+
+    // Calcula o ângulo de rotação com base na posição do mouse em relação ao centro da janela
+    glm::vec2 direction{mousePosition.x - m_viewportSize.x / 2,
+                        -(mousePosition.y - m_viewportSize.y / 2)};
+
+    m_rotation = std::atan2(direction.y, direction.x);
+  }
+}
+
 void Window::onPaint() {
-  if (gerado == false) return;
-
   auto const m_sides = sides;
-  poligonos(m_sides);
-  gerado = false;
+  if (gerado  && linear) {
+    // Renderiza o polígono uma vez ao clicar no botão
+    auto const m_sides = sides;
+    poligonos(m_sides);
+    gerado = false;
+  }
 
+  // Atualizar o ângulo de rotação em tempo real
+  updateRotation();
+
+  // Definir a viewport e usar o programa do shader
   abcg::glViewport(0, 0, m_viewportSize.x, m_viewportSize.y);
-
   abcg::glUseProgram(m_program);
 
-  // Mover objeto para baixo dos botões
+  // Configurar a posição e escala uma vez
   glm::vec2 const translation{0.0f, -0.3f};
   auto const translationLocation{
       abcg::glGetUniformLocation(m_program, "translation")};
   abcg::glUniform2fv(translationLocation, 1, &translation.x);
 
-  // Aumentar escala
   auto const scale{0.4f};
   auto const scaleLocation{abcg::glGetUniformLocation(m_program, "scale")};
   abcg::glUniform1f(scaleLocation, scale);
 
-  // Render
+  // Atualizar o valor de rotação em tempo real
+  auto const rotationLocation{abcg::glGetUniformLocation(m_program, "rotation")};
+  abcg::glUniform1f(rotationLocation, m_rotation);
+
+
+  // Renderizar o polígono com a rotação atualizada
   abcg::glBindVertexArray(m_VAO);
-  abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, m_sides + 2);
+
+  if(linear == true){
+    abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, m_sides + 2);
+  }
+  if(linear == false){
+    //abcg::glDrawElements(GL_TRIANGLES, 8, GL_UNSIGNED_INT, nullptr);
+    //abcg::glDrawArrays(GL_TRIANGLES, 0, 10);
+  }
+  
+
   abcg::glBindVertexArray(0);
 
   abcg::glUseProgram(0);
+}
+
+void Window::updateRotation() {
+  // Função chamada em cada quadro para atualizar a rotação
+  glm::ivec2 mousePosition;
+  SDL_GetMouseState(&mousePosition.x, &mousePosition.y);
+
+  glm::vec2 direction{mousePosition.x - m_viewportSize.x / 2,
+                      -(mousePosition.y - m_viewportSize.y / 2)};
+
+  m_rotation = std::atan2(direction.y, direction.x);
+  abcg::glClear(GL_COLOR_BUFFER_BIT);
 }
 
 void Window::onPaintUI() {
@@ -140,26 +198,36 @@ void Window::onPaintUI() {
       abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 3;
       gerado = true;
+      linear = true;
     }
     if (button_click == 1){ // QUADRADO
       abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 4;
       gerado = true;
+      linear = true;
     }
     if (button_click == 2){ // PENTAGONO
       abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 5;
       gerado = true;
+      linear = true;
     }
     if (button_click == 3){ // HEXAGONO
       abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 6;
       gerado = true;
+      linear = true;
     }
     if (button_click == 4){ // CIRCULO
       abcg::glClear(GL_COLOR_BUFFER_BIT);
       sides = 30;
       gerado = true;
+      linear = true;
+    }
+    if (button_click == 5){ // CIRCULO
+      abcg::glClear(GL_COLOR_BUFFER_BIT);
+      gerado = true;
+      linear = false;
     }
 
     ImGui::End();
@@ -261,6 +329,87 @@ void Window::poligonos(int sides){
     fmt::print(stderr, "Erro ao criar buffers ou VAO.\n");
     return;
   }
+
+  // End of binding to current VAO
+  abcg::glBindVertexArray(0);
+}
+
+// Forma geometrica não linear
+void Window::forma(){
+  fmt::print(stdout, "Forma especial\n");
+  abcg::glDeleteBuffers(1, &m_VBOPositions);
+  abcg::glDeleteBuffers(1, &m_VBOColors);
+  abcg::glDeleteVertexArrays(1, &m_VAO);
+
+  // Select random colors for the radial gradient
+  std::uniform_real_distribution rd(0.0f, 1.0f);
+  glm::vec3 const color1{rd(m_randomEngine), rd(m_randomEngine),
+                         rd(m_randomEngine)};
+  glm::vec3 const color2{rd(m_randomEngine), rd(m_randomEngine),
+                         rd(m_randomEngine)};
+
+  std::array positions{
+    glm::vec2{-02.5f, +12.5f}, glm::vec2{-15.5f, +02.5f},
+    glm::vec2{-15.5f, -12.5f}, glm::vec2{-09.5f, -07.5f},
+    glm::vec2{-03.5f, -12.5f}, glm::vec2{+03.5f, -12.5f},
+    glm::vec2{+09.5f, -07.5f}, glm::vec2{+15.5f, -12.5f},
+    glm::vec2{+15.5f, +02.5f}, glm::vec2{+02.5f, +12.5f}
+  };
+
+  // Normalize
+  for (auto &position : positions) {
+    position /= glm::vec2{15.5f, 15.5f};
+  }
+
+  std::array const indices{0, 1, 3,
+                           1, 2, 3,
+                           0, 3, 4,
+                           0, 4, 5,
+                           9, 0, 5,
+                           9, 5, 6,
+                           9, 6, 8,
+                           8, 6, 7};
+
+  std::vector<glm::vec3> colors;
+  colors.push_back(color1);
+
+  // Generate VBO
+  abcg::glGenBuffers(1, &m_VBO);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+  abcg::glBufferData(GL_ARRAY_BUFFER, sizeof(positions), positions.data(),
+                     GL_STATIC_DRAW);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+  // Generate EBO
+  abcg::glGenBuffers(1, &m_EBO);
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
+  abcg::glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices.data(),
+                     GL_STATIC_DRAW);
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
+  // Generate VBO of colors
+  abcg::glGenBuffers(1, &m_VBOColors);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBOColors);
+  abcg::glBufferData(GL_ARRAY_BUFFER, colors.size() * sizeof(glm::vec3),
+                     colors.data(), GL_STATIC_DRAW);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+  // Get location of attributes in the program
+  GLint positionAttribute{abcg::glGetAttribLocation(m_program, "inPosition")};
+
+  // Create VAO
+  abcg::glGenVertexArrays(1, &m_VAO);
+
+  // Bind vertex attributes to current VAO
+  abcg::glBindVertexArray(m_VAO);
+
+  abcg::glEnableVertexAttribArray(positionAttribute);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
+  abcg::glVertexAttribPointer(positionAttribute, 2, GL_FLOAT, GL_FALSE, 0,
+                              nullptr);
+  abcg::glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+  abcg::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_EBO);
 
   // End of binding to current VAO
   abcg::glBindVertexArray(0);
