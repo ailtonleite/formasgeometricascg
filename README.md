@@ -16,12 +16,15 @@ Funcionalidades Principais:
 
 Interface com Botões:
 O usuário pode clicar nos botões que representam diferentes tipos de polígonos (como triângulos, quadrados, hexágonos, etc.).
+
 Exibição Gráfica: 
 Ao clicar em um botão, o respectivo polígono é desenhado na tela em uma posição centralizada.
+
 Gráficos 2D: 
 A visualização dos polígonos é feita em uma área gráfica utilizando gráficos 2D, o que proporciona uma representação visual clara de cada figura geométrica.
 
 Objetivo do Projeto
+
 O objetivo principal desse trabalho foi desenvolver uma aplicação interativa e visual para explorar os conceitos de polígonos, permitindo que o usuário selecione e visualize diferentes formas geométricas. Essa aplicação pode ser útil em contextos educacionais, como o ensino de geometria e geometria computacional.
 
 ![image](https://github.com/user-attachments/assets/f04985c6-cad4-4ae5-adf6-a946b46812e4)
