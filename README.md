@@ -1,5 +1,8 @@
 # formasgeometricascg
 
+![image](https://github.com/user-attachments/assets/26d1035e-aeca-443a-8db8-512b17ebe0a8)
+
+
 # Relatório do Trabalho: Desenvolvimento de Aplicação Interativa com Gráficos 2D
 
 - Ailton Leite Manoel Santana Junior - RA: 11201811049
