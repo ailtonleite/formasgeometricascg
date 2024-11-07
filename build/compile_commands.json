@@ -1,122 +1,112 @@
 [
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgApplication.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgApplication.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgApplication.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTimer.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTimer.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTimer.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgException.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgException.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgException.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgImage.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgImage.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgImage.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTrackball.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTrackball.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTrackball.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgWindow.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgWindow.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgWindow.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgUtil.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgUtil.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgUtil.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLError.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLError.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLError.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLFunction.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLFunction.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLFunction.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLImage.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLImage.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLImage.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLShader.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLShader.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLShader.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/abcg.dir/includes_CXX.rsp -O3 -DNDEBUG -sSDL2_IMAGE_FORMATS='[\"jpg\",\"png\"]' -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_demo.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_demo.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_demo.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_draw.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_draw.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_draw.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_tables.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_tables.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_tables.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_widgets.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_widgets.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_widgets.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_sdl2.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_impl_sdl2.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_sdl2.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_sdl2.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui",
-  "command": "/usr/lib/ccache/g++  -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -g -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_opengl3.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/imgui.dir/includes_CXX.rsp -O3 -DNDEBUG -s USE_SDL=2 -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_opengl3.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui_impl_opengl3.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/fmt",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -g -std=gnu++20 -o CMakeFiles/fmt.dir/format.cc.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/format.cc",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/fmt.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/fmt.dir/format.cc.o -c /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/format.cc",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/format.cc"
 },
 {
-  "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/opengl",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/helloworld.dir/main.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/helloworld/opengl/main.cpp",
-  "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/helloworld/opengl/main.cpp"
-},
-{
-  "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/opengl",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/helloworld.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/helloworld/opengl/window.cpp",
-  "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/helloworld/opengl/window.cpp"
-},
-{
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/geometriacgabc.dir/main.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/geometriacgabc.dir/includes_CXX.rsp -O3 -DNDEBUG -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/geometriacgabc.dir/main.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp"
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc",
-  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/geometriacgabc.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp",
+  "command": "/home/ailton/emsdk/upstream/emscripten/em++  @CMakeFiles/geometriacgabc.dir/includes_CXX.rsp -O3 -DNDEBUG -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20 -o CMakeFiles/geometriacgabc.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp"
 }
 ]

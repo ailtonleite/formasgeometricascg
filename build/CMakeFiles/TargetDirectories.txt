@@ -21,11 +21,6 @@
 /home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/gsl/CMakeFiles/rebuild_cache.dir
 /home/ailton/ufabc/cg/formasgeometricascg/build/examples/CMakeFiles/edit_cache.dir
 /home/ailton/ufabc/cg/formasgeometricascg/build/examples/CMakeFiles/rebuild_cache.dir
-/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/CMakeFiles/edit_cache.dir
-/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/CMakeFiles/rebuild_cache.dir
-/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/opengl/CMakeFiles/helloworld.dir
-/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/opengl/CMakeFiles/edit_cache.dir
-/home/ailton/ufabc/cg/formasgeometricascg/build/examples/helloworld/opengl/CMakeFiles/rebuild_cache.dir
 /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc/CMakeFiles/geometriacgabc.dir
 /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc/CMakeFiles/edit_cache.dir
 /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc/CMakeFiles/rebuild_cache.dir

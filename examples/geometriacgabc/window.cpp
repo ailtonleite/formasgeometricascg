@@ -75,7 +75,7 @@ void Window::onEvent(SDL_Event const &event) {
 
 void Window::onPaint() {
   auto const m_sides = sides;
-  if (gerado  && linear) {
+  if (gerado && linear) {
     // Renderiza o polígono uma vez ao clicar no botão
     auto const m_sides = sides;
     poligonos(m_sides);
@@ -110,11 +110,6 @@ void Window::onPaint() {
   if(linear == true){
     abcg::glDrawArrays(GL_TRIANGLE_FAN, 0, m_sides + 2);
   }
-  if(linear == false){
-    //abcg::glDrawElements(GL_TRIANGLES, 8, GL_UNSIGNED_INT, nullptr);
-    //abcg::glDrawArrays(GL_TRIANGLES, 0, 10);
-  }
-  
 
   abcg::glBindVertexArray(0);
 
@@ -164,7 +159,7 @@ void Window::onPaintUI() {
             "Pentagono", 
             "Hexagono", 
             "Circulo", 
-            "palavra6"}; // TODO: Criar uma forma geometrica não linear (estrela, meia lua, etc)
+            " "}; // TODO: Criar uma forma geometrica não linear (estrela, meia lua, etc)
 
         // Use custom font
         if (ImGui::BeginTable("buttons", m_c)) {

@@ -156,19 +156,6 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named helloworld
-
-# Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
-
-# fast build rule for target.
-helloworld/fast:
-	$(MAKE) $(MAKESILENT) -f examples/helloworld/opengl/CMakeFiles/helloworld.dir/build.make examples/helloworld/opengl/CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
-
-#=============================================================================
 # Target rules for targets named geometriacgabc
 
 # Build rule for target.
@@ -192,7 +179,6 @@ help:
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... geometriacgabc"
-	@echo "... helloworld"
 	@echo "... imgui"
 .PHONY : help
 

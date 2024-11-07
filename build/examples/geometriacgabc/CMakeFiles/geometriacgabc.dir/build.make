@@ -70,32 +70,34 @@ include examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/progress.make
 include examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/flags.make
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/flags.make
+examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/includes_CXX.rsp
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o: ../examples/geometriacgabc/main.cpp
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o -MF CMakeFiles/geometriacgabc.dir/main.cpp.o.d -o CMakeFiles/geometriacgabc.dir/main.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/ccache /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o -MF CMakeFiles/geometriacgabc.dir/main.cpp.o.d -o CMakeFiles/geometriacgabc.dir/main.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometriacgabc.dir/main.cpp.i"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp > CMakeFiles/geometriacgabc.dir/main.cpp.i
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp > CMakeFiles/geometriacgabc.dir/main.cpp.i
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometriacgabc.dir/main.cpp.s"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp -o CMakeFiles/geometriacgabc.dir/main.cpp.s
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/main.cpp -o CMakeFiles/geometriacgabc.dir/main.cpp.s
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/flags.make
+examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/includes_CXX.rsp
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: ../examples/geometriacgabc/window.cpp
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/ccache /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o -MF CMakeFiles/geometriacgabc.dir/window.cpp.o.d -o CMakeFiles/geometriacgabc.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/ccache /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o -MF CMakeFiles/geometriacgabc.dir/window.cpp.o.d -o CMakeFiles/geometriacgabc.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geometriacgabc.dir/window.cpp.i"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp > CMakeFiles/geometriacgabc.dir/window.cpp.i
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp > CMakeFiles/geometriacgabc.dir/window.cpp.i
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geometriacgabc.dir/window.cpp.s"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/lib/ccache/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp -o CMakeFiles/geometriacgabc.dir/window.cpp.s
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /home/ailton/emsdk/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc/window.cpp -o CMakeFiles/geometriacgabc.dir/window.cpp.s
 
 # Object files for target geometriacgabc
 geometriacgabc_OBJECTS = \
@@ -105,30 +107,20 @@ geometriacgabc_OBJECTS = \
 # External object files for target geometriacgabc
 geometriacgabc_EXTERNAL_OBJECTS =
 
-bin/geometriacgabc: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o
-bin/geometriacgabc: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o
-bin/geometriacgabc: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build.make
-bin/geometriacgabc: abcg/libabcg.a
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libGLX.so
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libGLEW.so
-bin/geometriacgabc: abcg/external/fmt/libfmt.a
-bin/geometriacgabc: abcg/external/imgui/libimgui.a
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libSDL2main.a
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libSDL2.so
-bin/geometriacgabc: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
-bin/geometriacgabc: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/geometriacgabc"
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E remove_directory /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/main.cpp.o
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/window.cpp.o
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build.make
+../public/geometriacgabc.js: abcg/libabcg.a
+../public/geometriacgabc.js: abcg/external/fmt/libfmt.a
+../public/geometriacgabc.js: abcg/external/imgui/libimgui.a
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/linklibs.rsp
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/objects1.rsp
+../public/geometriacgabc.js: examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../public/geometriacgabc.js"
 	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/geometriacgabc.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E make_directory /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc.dir
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E copy /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc.dir/geometriacgabc
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E remove /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E rename /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc.dir /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc
-	cd /home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc && /usr/bin/cmake -E rm -rf /home/ailton/ufabc/cg/formasgeometricascg/build/bin/geometriacgabc.dir
 
 # Rule to build all files generated by this target.
-examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build: bin/geometriacgabc
+examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build: ../public/geometriacgabc.js
 .PHONY : examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build
 
 examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/clean:
