@@ -156,17 +156,17 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named geometriacgabc
+# Target rules for targets named geometriacgabc-2
 
 # Build rule for target.
-geometriacgabc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometriacgabc
-.PHONY : geometriacgabc
+geometriacgabc-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 geometriacgabc-2
+.PHONY : geometriacgabc-2
 
 # fast build rule for target.
-geometriacgabc/fast:
-	$(MAKE) $(MAKESILENT) -f examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build.make examples/geometriacgabc/CMakeFiles/geometriacgabc.dir/build
-.PHONY : geometriacgabc/fast
+geometriacgabc-2/fast:
+	$(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build
+.PHONY : geometriacgabc-2/fast
 
 # Help Target
 help:
@@ -178,7 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... abcg"
 	@echo "... fmt"
-	@echo "... geometriacgabc"
+	@echo "... geometriacgabc-2"
 	@echo "... imgui"
 .PHONY : help
 

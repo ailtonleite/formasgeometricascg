@@ -1,2 +1,2 @@
-/home/ailton/emsdk/upstream/emscripten/emar qc libfmt.a CMakeFiles/fmt.dir/format.cc.o
-/home/ailton/emsdk/upstream/emscripten/emranlib libfmt.a
+/usr/bin/ar qc libfmt.a CMakeFiles/fmt.dir/format.cc.o
+/usr/bin/ranlib libfmt.a
