@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../../public/geometriacgabc.js"
-  "../../../public/geometriacgabc.pdb"
+  "../../bin/geometriacgabc"
+  "../../bin/geometriacgabc.pdb"
   "CMakeFiles/geometriacgabc.dir/main.cpp.o"
   "CMakeFiles/geometriacgabc.dir/main.cpp.o.d"
   "CMakeFiles/geometriacgabc.dir/window.cpp.o"
