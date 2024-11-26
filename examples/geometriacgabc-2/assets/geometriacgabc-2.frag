@@ -2,14 +2,13 @@
 
 precision mediump float;
 
+in vec4 fragColor;
 out vec4 outColor;
 
 void main() {
-  float i = 1.0 - gl_FragCoord.z;
-
   if (gl_FrontFacing) {
-    outColor = vec4(i, i, i, 1);
+    outColor = fragColor;
   } else {
-    outColor = vec4(i, 0, 0, 1);
+    outColor = vec4(fragColor.r * 0.5, 0, 0, fragColor.a);
   }
 }

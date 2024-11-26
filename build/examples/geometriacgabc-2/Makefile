@@ -154,6 +154,54 @@ main.cpp.s:
 	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model.o: model.cpp.o
+.PHONY : model.o
+
+# target to build an object file
+model.cpp.o:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/model.cpp.o
+.PHONY : model.cpp.o
+
+model.i: model.cpp.i
+.PHONY : model.i
+
+# target to preprocess a source file
+model.cpp.i:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/model.cpp.i
+.PHONY : model.cpp.i
+
+model.s: model.cpp.s
+.PHONY : model.s
+
+# target to generate assembly for a file
+model.cpp.s:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/model.cpp.s
+.PHONY : model.cpp.s
+
+trackball.o: trackball.cpp.o
+.PHONY : trackball.o
+
+# target to build an object file
+trackball.cpp.o:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o
+.PHONY : trackball.cpp.o
+
+trackball.i: trackball.cpp.i
+.PHONY : trackball.i
+
+# target to preprocess a source file
+trackball.cpp.i:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/trackball.cpp.i
+.PHONY : trackball.cpp.i
+
+trackball.s: trackball.cpp.s
+.PHONY : trackball.s
+
+# target to generate assembly for a file
+trackball.cpp.s:
+	cd /home/ailton/ufabc/cg/formasgeometricascg/build && $(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/trackball.cpp.s
+.PHONY : trackball.cpp.s
+
 window.o: window.cpp.o
 .PHONY : window.o
 
@@ -190,6 +238,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model.o"
+	@echo "... model.i"
+	@echo "... model.s"
+	@echo "... trackball.o"
+	@echo "... trackball.i"
+	@echo "... trackball.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"
