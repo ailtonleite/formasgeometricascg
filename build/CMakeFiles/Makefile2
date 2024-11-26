@@ -278,7 +278,7 @@ abcg/CMakeFiles/abcg.dir/clean:
 abcg/external/imgui/CMakeFiles/imgui.dir/all:
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f abcg/external/imgui/CMakeFiles/imgui.dir/build.make abcg/external/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28 "Built target imgui"
 .PHONY : abcg/external/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -332,12 +332,12 @@ examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/all: abcg/external/img
 examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/all: abcg/external/fmt/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build.make examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=16,17,18 "Built target geometriacgabc-2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles --progress-num=16,17,18,19,20 "Built target geometriacgabc-2"
 .PHONY : examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/all
 
 # Build rule for subdir invocation for target.
 examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ailton/ufabc/cg/formasgeometricascg/build/CMakeFiles 0
 .PHONY : examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/rule

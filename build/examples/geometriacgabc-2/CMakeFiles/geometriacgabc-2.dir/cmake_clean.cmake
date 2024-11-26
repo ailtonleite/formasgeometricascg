@@ -3,6 +3,10 @@ file(REMOVE_RECURSE
   "../../bin/geometriacgabc-2.pdb"
   "CMakeFiles/geometriacgabc-2.dir/main.cpp.o"
   "CMakeFiles/geometriacgabc-2.dir/main.cpp.o.d"
+  "CMakeFiles/geometriacgabc-2.dir/model.cpp.o"
+  "CMakeFiles/geometriacgabc-2.dir/model.cpp.o.d"
+  "CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o"
+  "CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o.d"
   "CMakeFiles/geometriacgabc-2.dir/window.cpp.o"
   "CMakeFiles/geometriacgabc-2.dir/window.cpp.o.d"
 )

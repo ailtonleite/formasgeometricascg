@@ -632,5 +632,8 @@ examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/window.cpp.o: \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgShader.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLWindow.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLFunction.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/model.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/trackball.hpp \
+ /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcg.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/fast_trigonometry.hpp \
  /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/fast_trigonometry.inl

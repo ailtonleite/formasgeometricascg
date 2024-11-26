@@ -106,7 +106,17 @@
 },
 {
   "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc-2",
+  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/geometriacgabc-2.dir/model.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/model.cpp",
+  "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/model.cpp"
+},
+{
+  "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc-2",
   "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/geometriacgabc-2.dir/window.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/window.cpp",
   "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/window.cpp"
+},
+{
+  "directory": "/home/ailton/ufabc/cg/formasgeometricascg/build/examples/geometriacgabc-2",
+  "command": "/usr/lib/ccache/g++  -I/home/ailton/ufabc/cg/formasgeometricascg/abcg -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/.. -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui -isystem /usr/include/SDL2 -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external -isystem /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader -g -Wall -Wextra -pedantic -std=gnu++20 -o CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o -c /home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/trackball.cpp",
+  "file": "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/trackball.cpp"
 }
 ]

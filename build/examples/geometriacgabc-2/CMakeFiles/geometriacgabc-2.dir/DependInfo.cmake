@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/main.cpp" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/main.cpp.o" "gcc" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/main.cpp.o.d"
+  "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/model.cpp" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/model.cpp.o" "gcc" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/model.cpp.o.d"
+  "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/trackball.cpp" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o" "gcc" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/trackball.cpp.o.d"
   "/home/ailton/ufabc/cg/formasgeometricascg/examples/geometriacgabc-2/window.cpp" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/window.cpp.o" "gcc" "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/window.cpp.o.d"
   )
 
