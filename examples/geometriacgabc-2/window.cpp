@@ -1,4 +1,5 @@
 #include "window.hpp"
+#include <vector> 
 
 #include <glm/gtx/fast_trigonometry.hpp>
 #include <unordered_map>
@@ -39,11 +40,16 @@ void Window::onCreate() {
                                  {.source = assetsPath + "geometriacgabc-2.frag",
                                   .stage = abcg::ShaderStage::Fragment}});
 
+  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
+
   // Load model
   m_model.loadObj(assetsPath + "tetraedo.obj");
   m_model.setupVAO(m_program);
 
   m_trianglesToDraw = m_model.getNumTriangles();
+
+  m_randomEngine.seed(
+      std::chrono::steady_clock::now().time_since_epoch().count());
 }
 
 void Window::onUpdate() {
@@ -74,7 +80,7 @@ void Window::onPaint() {
 
   // Set uniform variables for the current model
   abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &m_modelMatrix[0][0]);
-  abcg::glUniform4f(colorLoc, 1.0f, 1.0f, 1.0f, 1.0f); // White
+  abcg::glUniform4f(colorLoc, m_color.at(0), m_color.at(1), m_color.at(2), 1.0f); // White
 
   m_model.render(m_trianglesToDraw);
 
@@ -97,7 +103,7 @@ void Window::onPaintUI() {
     // CW/CCW combo box
     {
       static std::size_t currentIndex{};
-      std::vector<std::string> const comboItems{"Tetraedo", "Piramide"};
+      std::vector<std::string> const comboItems{"Tetraedo", "Piramide", "Cubo", "Paralelepipedo", "Prisma-hexagonal", "Cone", "Cilindro", "Esfera", "Elipsoide", "Toroide"};
 
       ImGui::PushItemWidth(225);
       if (ImGui::BeginCombo("Formas",
@@ -113,17 +119,36 @@ void Window::onPaintUI() {
       }
       ImGui::PopItemWidth();
 
+      ImGui::ColorEdit3("Colorir", m_color.data());
+      
       if (currentIndex == 0) {
         tetraedo();
-      } else {
+      } else if (currentIndex == 1){
         piramide();
+      } else if (currentIndex == 2){
+        cubo();
       }
     }
-    //m_projMatrix = glm::ortho(-1.0f, 1.0f, -1.0f, 1.0f, 0.1f, 5.0f);
     auto const aspect{gsl::narrow<float>(m_viewportSize.x) /
                           gsl::narrow<float>(m_viewportSize.y)};
         m_projMatrix =
             glm::perspective(glm::radians(45.0f), aspect, 0.1f, 5.0f);
+
+    ImGui::End();
+  }
+
+  {
+    ImGui::SetNextWindowPos(ImVec2(5, m_viewportSize.y - 94));
+    ImGui::SetNextWindowSize(ImVec2(m_viewportSize.x - 10, -1));
+    ImGui::Begin("Text window", nullptr, ImGuiWindowFlags_NoDecoration);
+
+    {
+      ImGui::PushItemWidth(m_viewportSize.x - 25);
+
+      ImGui::Text("Forma geometrica com todos os detalhes");
+
+      ImGui::PopItemWidth();
+    }
 
     ImGui::End();
   }
@@ -157,7 +182,7 @@ void Window::tetraedo(){
   m_model.loadObj(assetsPath + "tetraedo.obj");
   m_model.setupVAO(m_program);
 
-  m_trianglesToDraw = m_model.getNumTriangles();
+  m_trianglesToDraw = m_model.getNumTriangles(); // Desnecessário talvez
 }
 
 void Window::piramide(){
@@ -175,7 +200,32 @@ void Window::piramide(){
                                  {.source = assetsPath + "geometriacgabc-2.frag",
                                   .stage = abcg::ShaderStage::Fragment}});
 
+  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
+
   m_model.loadObj(assetsPath + "basic_pyramid.obj");
+  m_model.setupVAO(m_program);
+
+  m_trianglesToDraw = m_model.getNumTriangles();
+}
+
+void Window::cubo(){
+  m_model.destroy();
+  abcg::glDeleteProgram(m_program);
+
+  auto const &assetsPath{abcg::Application::getAssetsPath()};
+
+  abcg::glEnable(GL_DEPTH_TEST);
+
+  // Create program
+  m_program =
+      abcg::createOpenGLProgram({{.source = assetsPath + "geometriacgabc-2.vert",
+                                  .stage = abcg::ShaderStage::Vertex},
+                                 {.source = assetsPath + "geometriacgabc-2.frag",
+                                  .stage = abcg::ShaderStage::Fragment}});
+
+  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
+
+  m_model.loadObj(assetsPath + "quadrado.obj");
   m_model.setupVAO(m_program);
 
   m_trianglesToDraw = m_model.getNumTriangles();

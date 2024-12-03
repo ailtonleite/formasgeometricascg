@@ -1,6 +1,9 @@
 #ifndef WINDOW_HPP_
 #define WINDOW_HPP_
 
+#include <random>
+#include <vector> 
+
 #include "abcgOpenGL.hpp"
 #include "model.hpp"
 #include "trackball.hpp"
@@ -29,9 +32,14 @@ private:
   glm::mat4 m_projMatrix{1.0f};
 
   GLuint m_program{};
+  GLint m_colorLocation{};
+  std::default_random_engine m_randomEngine;
+
+  std::array<float, 4> m_color {1.0f, 1.0f, 1.0f, 1.0f};
 
   void tetraedo();
   void piramide();
+  void cubo();
 };
 
 #endif
