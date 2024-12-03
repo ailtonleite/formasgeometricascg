@@ -43,7 +43,7 @@ void Window::onCreate() {
 
   m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
 
-  // Load model
+  // Carrega modelo inicial
   m_model.loadObj(assetsPath + "tetraedo.obj");
   m_model.setupVAO(m_program);
 
@@ -92,7 +92,6 @@ void Window::onPaint() {
 void Window::onPaintUI() {
   abcg::OpenGLWindow::onPaintUI();
 
-  // Create a window for the other widgets
   {
     auto const widgetSize{ImVec2(300, 62)};
     ImGui::SetNextWindowPos(ImVec2(m_viewportSize.x - widgetSize.x - 5, 5));
@@ -101,7 +100,7 @@ void Window::onPaintUI() {
 
     abcg::glEnable(GL_CULL_FACE);
 
-    // CW/CCW combo box
+    // Janela de interação para selecionar as formas
     {
       static std::size_t currentIndex{};
       std::vector<std::string> const comboItems{"Tetraedo", "Piramide", "Cubo", "Paralelepipedo", "Prisma-hexagonal", "Cone", "Cilindro", "Esfera", "Elipsoide", "Toroide"};
@@ -152,6 +151,7 @@ void Window::onPaintUI() {
     ImGui::End();
   }
 
+  // Janela descritiva do objeto
   {
     ImGui::SetNextWindowPos(ImVec2(180, m_viewportSize.y - 70));
     ImGui::SetNextWindowSize(ImVec2(m_viewportSize.x -20, 70));
@@ -179,6 +179,7 @@ void Window::onDestroy() {
   abcg::glDeleteProgram(m_program);
 }
 
+// Carrega objeto com base no item selecionado em onPaintUI
 void Window::carregaObj(std::string obj){
   m_model.destroy();
   abcg::glDeleteProgram(m_program);
@@ -196,7 +197,7 @@ void Window::carregaObj(std::string obj){
 
   if(obj == "tetraedo"){
     m_model.loadObj(assetsPath + "tetraedo.obj");
-    m_obj = {4, 6, 4};
+    m_obj = {4, 6, 4}; // Variavel de descrição do obj (vertices, arestas, faces)
   } else if (obj == "piramide"){
     m_model.loadObj(assetsPath + "basic_pyramid.obj");
     m_obj = {5, 8, 5};

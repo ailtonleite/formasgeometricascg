@@ -37,7 +37,7 @@ private:
   std::default_random_engine m_randomEngine;
 
   std::array<float, 4> m_color {1.0f, 1.0f, 1.0f, 1.0f};
-  std::array<int, 3> m_obj {4, 6, 4};
+  std::array<int, 3> m_obj {4, 6, 4}; // Variavel de descrição do obj (vertices, arestas, faces)
 
   void carregaObj(std::string obj);
 };
