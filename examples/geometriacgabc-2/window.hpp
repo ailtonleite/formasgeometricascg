@@ -1,9 +1,13 @@
 #ifndef WINDOW_HPP_
 #define WINDOW_HPP_
 
+#include <random>
+#include <vector> 
+
 #include "abcgOpenGL.hpp"
 #include "model.hpp"
 #include "trackball.hpp"
+#include <string>
 
 class Window : public abcg::OpenGLWindow {
 protected:
@@ -29,9 +33,13 @@ private:
   glm::mat4 m_projMatrix{1.0f};
 
   GLuint m_program{};
+  GLint m_colorLocation{};
+  std::default_random_engine m_randomEngine;
 
-  void tetraedo();
-  void piramide();
+  std::array<float, 4> m_color {1.0f, 1.0f, 1.0f, 1.0f};
+  std::array<int, 3> m_obj {4, 6, 4};
+
+  void carregaObj(std::string obj);
 };
 
 #endif
