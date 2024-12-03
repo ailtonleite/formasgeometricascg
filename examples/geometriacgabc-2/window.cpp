@@ -3,6 +3,7 @@
 
 #include <glm/gtx/fast_trigonometry.hpp>
 #include <unordered_map>
+#include <string>
 
 void Window::onEvent(SDL_Event const &event) {
   glm::ivec2 mousePosition;
@@ -122,11 +123,25 @@ void Window::onPaintUI() {
       ImGui::ColorEdit3("Colorir", m_color.data());
       
       if (currentIndex == 0) {
-        tetraedo();
+        carregaObj("tetraedo");
       } else if (currentIndex == 1){
-        piramide();
+        carregaObj("piramide");
       } else if (currentIndex == 2){
-        cubo();
+        carregaObj("cubo");
+      } else if (currentIndex == 3){
+        carregaObj("paralelepipedo");
+      } else if (currentIndex == 4){
+        carregaObj("prisma");
+      } else if (currentIndex == 5){
+        carregaObj("cone");
+      } else if (currentIndex == 6){
+        carregaObj("cilindro");
+      } else if (currentIndex == 7){
+        carregaObj("esfera");
+      } else if (currentIndex == 8){
+        carregaObj("elipsoide");
+      } else if (currentIndex == 9){
+        carregaObj("toroide");
       }
     }
     auto const aspect{gsl::narrow<float>(m_viewportSize.x) /
@@ -138,14 +153,14 @@ void Window::onPaintUI() {
   }
 
   {
-    ImGui::SetNextWindowPos(ImVec2(5, m_viewportSize.y - 94));
-    ImGui::SetNextWindowSize(ImVec2(m_viewportSize.x - 10, -1));
+    ImGui::SetNextWindowPos(ImVec2(180, m_viewportSize.y - 70));
+    ImGui::SetNextWindowSize(ImVec2(m_viewportSize.x -20, 70));
     ImGui::Begin("Text window", nullptr, ImGuiWindowFlags_NoDecoration);
 
     {
-      ImGui::PushItemWidth(m_viewportSize.x - 25);
+      ImGui::PushItemWidth(m_viewportSize.x - 20);
 
-      ImGui::Text("Forma geometrica com todos os detalhes");
+      ImGui::Text("Vertices: %d\nArestas: %d\nFaces: %d", m_obj[0], m_obj[1], m_obj[2]);
 
       ImGui::PopItemWidth();
     }
@@ -164,7 +179,7 @@ void Window::onDestroy() {
   abcg::glDeleteProgram(m_program);
 }
 
-void Window::tetraedo(){
+void Window::carregaObj(std::string obj){
   m_model.destroy();
   abcg::glDeleteProgram(m_program);
 
@@ -179,54 +194,32 @@ void Window::tetraedo(){
                                  {.source = assetsPath + "geometriacgabc-2.frag",
                                   .stage = abcg::ShaderStage::Fragment}});
 
-  m_model.loadObj(assetsPath + "tetraedo.obj");
+  if(obj == "tetraedo"){
+    m_model.loadObj(assetsPath + "tetraedo.obj");
+    m_obj = {4, 6, 4};
+  } else if (obj == "piramide"){
+    m_model.loadObj(assetsPath + "basic_pyramid.obj");
+    m_obj = {5, 8, 5};
+  } else if (obj == "cubo"){
+    m_model.loadObj(assetsPath + "quadrado.obj");
+  } else if (obj == "paralelepipedo"){
+    m_model.loadObj(assetsPath + "paralelepipedo.obj");
+  } else if (obj == "prisma"){
+    m_model.loadObj(assetsPath + "prisma.obj");
+  } else if (obj == "cone"){
+    m_model.loadObj(assetsPath + "cone.obj");
+  } else if (obj == "cilindro"){
+    m_model.loadObj(assetsPath + "cilindro.obj");
+  } else if (obj == "esfera"){
+    m_model.loadObj(assetsPath + "esfera.obj");
+    m_obj = {0, 0, 0};
+  } else if (obj == "elipsoide"){
+    m_model.loadObj(assetsPath + "elipsoide.obj");
+  } else if (obj == "toroide"){
+    m_model.loadObj(assetsPath + "toroide.obj");
+  }
+
   m_model.setupVAO(m_program);
 
   m_trianglesToDraw = m_model.getNumTriangles(); // Desnecessário talvez
-}
-
-void Window::piramide(){
-  m_model.destroy();
-  abcg::glDeleteProgram(m_program);
-
-  auto const &assetsPath{abcg::Application::getAssetsPath()};
-
-  abcg::glEnable(GL_DEPTH_TEST);
-
-  // Create program
-  m_program =
-      abcg::createOpenGLProgram({{.source = assetsPath + "geometriacgabc-2.vert",
-                                  .stage = abcg::ShaderStage::Vertex},
-                                 {.source = assetsPath + "geometriacgabc-2.frag",
-                                  .stage = abcg::ShaderStage::Fragment}});
-
-  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
-
-  m_model.loadObj(assetsPath + "basic_pyramid.obj");
-  m_model.setupVAO(m_program);
-
-  m_trianglesToDraw = m_model.getNumTriangles();
-}
-
-void Window::cubo(){
-  m_model.destroy();
-  abcg::glDeleteProgram(m_program);
-
-  auto const &assetsPath{abcg::Application::getAssetsPath()};
-
-  abcg::glEnable(GL_DEPTH_TEST);
-
-  // Create program
-  m_program =
-      abcg::createOpenGLProgram({{.source = assetsPath + "geometriacgabc-2.vert",
-                                  .stage = abcg::ShaderStage::Vertex},
-                                 {.source = assetsPath + "geometriacgabc-2.frag",
-                                  .stage = abcg::ShaderStage::Fragment}});
-
-  m_colorLocation = abcg::glGetUniformLocation(m_program, "color");
-
-  m_model.loadObj(assetsPath + "quadrado.obj");
-  m_model.setupVAO(m_program);
-
-  m_trianglesToDraw = m_model.getNumTriangles();
 }

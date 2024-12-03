@@ -7,6 +7,7 @@
 #include "abcgOpenGL.hpp"
 #include "model.hpp"
 #include "trackball.hpp"
+#include <string>
 
 class Window : public abcg::OpenGLWindow {
 protected:
@@ -36,10 +37,9 @@ private:
   std::default_random_engine m_randomEngine;
 
   std::array<float, 4> m_color {1.0f, 1.0f, 1.0f, 1.0f};
+  std::array<int, 3> m_obj {4, 6, 4};
 
-  void tetraedo();
-  void piramide();
-  void cubo();
+  void carregaObj(std::string obj);
 };
 
 #endif
