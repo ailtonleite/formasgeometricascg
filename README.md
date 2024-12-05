@@ -1,5 +1,4 @@
-# Tema do Trabalho
-## Formas Geométricas em 3D
+# Tema do Trabalho: **Formas Geométricas em 3D**
 
 ### Integrantes do projeto:
 - Ailton Leite Manoel Santana Junior - RA: 11201811049
