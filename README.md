@@ -1,5 +1,8 @@
 # Tema do Trabalho: **Formas Geométricas em 3D**
 
+![image](https://github.com/user-attachments/assets/224600f0-8ff2-4388-84a0-9cbbc281f924)
+
+
 ### Integrantes do projeto:
 - Ailton Leite Manoel Santana Junior - RA: 11201811049
 - Mariana Vieira Santos - RA: 11201811863
@@ -22,3 +25,8 @@ Um programa de computação gráfica pode ser uma ferramenta poderosa para super
 Além disso, tal programa pode auxiliar os professores ao oferecer recursos visuais que complementam a teoria, tornando as aulas mais dinâmicas e interessantes. A possibilidade de criar simulações e animações transforma conceitos abstratos em experiências concretas, promovendo um entendimento mais profundo e duradouro nos alunos.
 
 Dessa forma, este projeto visa não apenas a melhorar a qualidade do ensino de geometria, mas também a tornar o aprendizado mais acessível e eficaz para todos os alunos, atendendo às demandas e desafios enfrentados pelos educadores.
+
+# Funcionalidades:
+Interface com lista de seleções de objetos geometricos e painel de seleção de cores. O objeto é gerado imediatamente após selecionado na interface, além da possibilidade de movimenta-lo pelo mouse ou pelo toque na tela.
+
+Link da aplicação: https://ailtonleite.github.io/formasgeometricascg/public/geometriacgabc-2.html
