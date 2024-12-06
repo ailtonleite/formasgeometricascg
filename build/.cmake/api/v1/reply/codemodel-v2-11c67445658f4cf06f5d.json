@@ -11,7 +11,7 @@
 						1,
 						9
 					],
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -25,7 +25,7 @@
 					[
 						2
 					],
-					"jsonFile" : "directory-abcg-Debug-0145cbc06d72cc239d33.json",
+					"jsonFile" : "directory-abcg-Release-0145cbc06d72cc239d33.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -49,7 +49,7 @@
 						7,
 						8
 					],
-					"jsonFile" : "directory-abcg.external-Debug-4c756a9ce7fbae04ced4.json",
+					"jsonFile" : "directory-abcg.external-Release-4c756a9ce7fbae04ced4.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -60,7 +60,7 @@
 				},
 				{
 					"build" : "abcg/external/tiny_obj_loader",
-					"jsonFile" : "directory-abcg.external.tiny_obj_loader-Debug-98b5a5e422dcfe342652.json",
+					"jsonFile" : "directory-abcg.external.tiny_obj_loader-Release-98b5a5e422dcfe342652.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -71,7 +71,7 @@
 				},
 				{
 					"build" : "abcg/external/imgui",
-					"jsonFile" : "directory-abcg.external.imgui-Debug-22261efdf06059deae00.json",
+					"jsonFile" : "directory-abcg.external.imgui-Release-22261efdf06059deae00.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -86,7 +86,7 @@
 				},
 				{
 					"build" : "abcg/external/cppitertools",
-					"jsonFile" : "directory-abcg.external.cppitertools-Debug-60d25409e716e9a630b4.json",
+					"jsonFile" : "directory-abcg.external.cppitertools-Release-60d25409e716e9a630b4.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -97,7 +97,7 @@
 				},
 				{
 					"build" : "abcg/external/fmt",
-					"jsonFile" : "directory-abcg.external.fmt-Debug-e4ab32fc36c044588469.json",
+					"jsonFile" : "directory-abcg.external.fmt-Release-e4ab32fc36c044588469.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -112,7 +112,7 @@
 				},
 				{
 					"build" : "abcg/external/glm",
-					"jsonFile" : "directory-abcg.external.glm-Debug-2fa048d9ea6ee800c678.json",
+					"jsonFile" : "directory-abcg.external.glm-Release-2fa048d9ea6ee800c678.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -123,7 +123,7 @@
 				},
 				{
 					"build" : "abcg/external/gsl",
-					"jsonFile" : "directory-abcg.external.gsl-Debug-7c2707ed0dc68a4188db.json",
+					"jsonFile" : "directory-abcg.external.gsl-Release-7c2707ed0dc68a4188db.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -138,7 +138,7 @@
 					[
 						10
 					],
-					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"jsonFile" : "directory-examples-Release-1c8b83b621b6ef38a245.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -149,7 +149,7 @@
 				},
 				{
 					"build" : "examples/geometriacgabc-2",
-					"jsonFile" : "directory-examples.geometriacgabc-2-Debug-8f738e75e1a0759a38bb.json",
+					"jsonFile" : "directory-examples.geometriacgabc-2-Release-8f738e75e1a0759a38bb.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -163,7 +163,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -267,28 +267,28 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "abcg::@fa5a221ce82f0a06330e",
-					"jsonFile" : "target-abcg-Debug-200c68247522b2484923.json",
+					"jsonFile" : "target-abcg-Release-01e7c886074f839e0e98.json",
 					"name" : "abcg",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "fmt::@05cd5962bb4e2bff130e",
-					"jsonFile" : "target-fmt-Debug-77b21ba6cf2e1493286e.json",
+					"jsonFile" : "target-fmt-Release-bd96e3b75dd2495b1097.json",
 					"name" : "fmt",
 					"projectIndex" : 5
 				},
 				{
 					"directoryIndex" : 10,
 					"id" : "geometriacgabc-2::@e2c6d87d0b7c3f2112c9",
-					"jsonFile" : "target-geometriacgabc-2-Debug-f6c88adb3da0b55538ed.json",
+					"jsonFile" : "target-geometriacgabc-2-Release-3a63a630dd3b9197c758.json",
 					"name" : "geometriacgabc-2",
 					"projectIndex" : 7
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "imgui::@a1283253420173d9f2e2",
-					"jsonFile" : "target-imgui-Debug-39c80fd8333540385868.json",
+					"jsonFile" : "target-imgui-Release-86e4b48077d5c89d61ac.json",
 					"name" : "imgui",
 					"projectIndex" : 3
 				}
