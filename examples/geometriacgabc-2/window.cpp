@@ -203,21 +203,28 @@ void Window::carregaObj(std::string obj){
     m_obj = {5, 8, 5};
   } else if (obj == "cubo"){
     m_model.loadObj(assetsPath + "quadrado.obj");
+    m_obj = {8, 12, 6};
   } else if (obj == "paralelepipedo"){
     m_model.loadObj(assetsPath + "paralelepipedo.obj");
+    m_obj = {8, 12, 6};
   } else if (obj == "prisma"){
     m_model.loadObj(assetsPath + "prisma.obj");
+    m_obj = {12, 18, 8};
   } else if (obj == "cone"){
     m_model.loadObj(assetsPath + "cone.obj");
+    m_obj = {1, 1, 2};
   } else if (obj == "cilindro"){
     m_model.loadObj(assetsPath + "cilindro.obj");
+    m_obj = {0, 0, 3};
   } else if (obj == "esfera"){
     m_model.loadObj(assetsPath + "esfera.obj");
     m_obj = {0, 0, 0};
   } else if (obj == "elipsoide"){
     m_model.loadObj(assetsPath + "elipsoide.obj");
+    m_obj = {0, 0, 0};
   } else if (obj == "toroide"){
     m_model.loadObj(assetsPath + "toroide.obj");
+    m_obj = {0, 0, 0};
   }
 
   m_model.setupVAO(m_program);
