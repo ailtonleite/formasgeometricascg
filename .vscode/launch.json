@@ -5,7 +5,7 @@
         "name": "(gdb) Launch",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceFolder}/build/bin/geometriacgabc-2/geometriacgabc-2",
+        "program": "${workspaceFolder}/build/bin/geometriacgabc-3/geometriacgabc-3",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${fileDirname}",

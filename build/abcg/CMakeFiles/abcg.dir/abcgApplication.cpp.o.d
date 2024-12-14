@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgApplication.cpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgApplication.cpp \
  /usr/include/stdc-predef.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgApplication.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgApplication.hpp \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -53,7 +53,7 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h /usr/include/c++/11/cstdint \
+ /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -90,16 +90,13 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/11/bits/std_abs.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_heap.h \
@@ -136,10 +133,9 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/cerrno \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
@@ -149,11 +145,8 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/c++/11/stdlib.h \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/inttypes.h /usr/include/c++/11/math.h \
- /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/inttypes.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -286,17 +279,17 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/c++/11/span /usr/include/c++/11/array \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/cstddef \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgException.hpp \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
- /usr/include/c++/11/bits/exception_ptr.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgException.hpp \
+ /usr/include/c++/11/source_location /usr/include/c++/11/stdexcept \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgWindow.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgExternal.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgWindow.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgExternal.hpp \
  /usr/include/SDL2/SDL.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/itertools.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/accumulate.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/itertools.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/accumulate.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/bits/uses_allocator.h \
@@ -315,7 +308,7 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/variant \
  /usr/include/c++/11/bits/parse_numbers.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
@@ -324,9 +317,9 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/optional \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/batched.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/batched.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iteratoriterator.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_algobase.h \
  /usr/include/c++/11/bits/ranges_util.h \
@@ -364,7 +357,6 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/syscall.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
@@ -376,258 +368,258 @@ abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/chain.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/chunked.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/combinations.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/compress.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/count.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/range.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/cycle.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/dropwhile.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/filter.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/enumerate.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/filterfalse.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/groupby.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/imap.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/starmap.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/zip.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/permutations.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/powerset.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/product.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/repeat.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/reversed.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/slice.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/sliding_window.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/chain.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iter_tuples.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/chunked.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/combinations.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/combinations_with_replacement.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/compress.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/count.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/range.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/cycle.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/dropwhile.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/filter.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/enumerate.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/filterfalse.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/groupby.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/imap.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/starmap.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/zip.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/permutations.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/powerset.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/product.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/repeat.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/reversed.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/slice.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/sliding_window.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/sorted.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/takewhile.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/unique_everseen.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/sorted.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/takewhile.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/unique_everseen.hpp \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/unique_justseen.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/core.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/unique_justseen.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/fmt/core.h \
  /usr/include/c++/11/cstring \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/glm.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/_fixes.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/simd/platform.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/glm.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/_fixes.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/simd/platform.h \
  /usr/include/c++/11/cfloat \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/fwd.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/qualifier.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/vec2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec2.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/compute_vector_relational.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int2_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/scalar_int_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint2_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/scalar_uint_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/vec3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec3.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int3_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint3_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/vec4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec4.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int4_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint4_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat2x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x2.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/matrix.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat2x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x3.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat2x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat2x4.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat3x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x2.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat3x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x3.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat3x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat3x4.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double3x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float3x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat4x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x2.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat4x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x3.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x3.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x3_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/mat4x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_mat4x4.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double4x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x4.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float4x4_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_matrix.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/geometric.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_geometric.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/exponential.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_vec1.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_exponential.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/vector_relational.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_vector_relational.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/_vectorize.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/common.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_common.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/compute_common.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_double2x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x2.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_float2x2_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/trigonometric.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_trigonometric.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/packing.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_packing.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_half.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_half.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/integer.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/func_integer.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/matrix_inverse.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/matrix_inverse.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/hash.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/vec1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_bool1_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_float1_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_double1_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_int1_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint1.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_uint1_sized.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/quaternion.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/constants.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/scalar_constants.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/scalar_constants.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/constants.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/matrix_transform.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_projection.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_projection.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_clip_space.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_clip_space.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_transform.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/matrix_transform.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/matrix_transform.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_relational.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/vector_relational.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_float.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_common.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_geometric.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_geometric.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_common.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_float.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_quat.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_relational.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_relational.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/type_quat.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_float_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_double.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_double_precision.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_trigonometric.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_trigonometric.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_transform.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_transform.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/quaternion.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/epsilon.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtc/epsilon.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/dual_quaternion.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/dual_quaternion.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/hash.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/quaternion.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_exponential.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/ext/quaternion_exponential.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/norm.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/component_wise.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/component_wise.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/norm.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/glm/gtx/quaternion.inl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_algorithm \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_assert \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/span \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_byte \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_util \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/multi_span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/fwd.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/qualifier.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/vec2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec2.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/compute_vector_relational.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int2_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/scalar_int_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint2_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/scalar_uint_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/vec3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec3.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int3_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint3_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/vec4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec4.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int4_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint4_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat2x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x2.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/matrix.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat2x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x3.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat2x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat2x4.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat3x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x2.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat3x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x3.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat3x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat3x4.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double3x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float3x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat4x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x2.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat4x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x3.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x3.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x3_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/mat4x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_mat4x4.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double4x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x4.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float4x4_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_matrix.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/geometric.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_geometric.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/exponential.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_vec1.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_exponential.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/vector_relational.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_vector_relational.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/_vectorize.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/common.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_common.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/compute_common.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_double2x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x2.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_float2x2_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/trigonometric.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_trigonometric.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/packing.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_packing.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_half.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_half.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/integer.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/func_integer.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/matrix_inverse.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/matrix_inverse.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/hash.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/vec1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_bool1_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_float1_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_double1_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_int1_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint1.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_uint1_sized.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/quaternion.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/constants.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/scalar_constants.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/scalar_constants.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/constants.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/matrix_transform.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_projection.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_projection.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_clip_space.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_clip_space.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_transform.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/matrix_transform.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/matrix_transform.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_relational.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/vector_relational.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_float.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_common.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_geometric.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_geometric.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_common.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_float.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_quat.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_relational.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_relational.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/type_quat.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_float_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_double.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_double_precision.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_trigonometric.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_trigonometric.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_transform.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_transform.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/quaternion.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/epsilon.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtc/epsilon.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/dual_quaternion.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/dual_quaternion.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/hash.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/quaternion.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_exponential.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/ext/quaternion_exponential.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/norm.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/component_wise.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/detail/setup.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/component_wise.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/norm.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/glm/gtx/quaternion.inl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_algorithm \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_assert \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_byte \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_util \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/multi_span \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/pointers \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/string_span \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/span_ext \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imgui.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui/imconfig.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/tiny_obj_loader/tiny_obj_loader.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/pointers \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/string_span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/span_ext \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/imgui/imgui.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/imgui/imconfig.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/tiny_obj_loader/tiny_obj_loader.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgTimer.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgTimer.hpp \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/fstream \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \

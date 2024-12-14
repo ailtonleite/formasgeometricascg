@@ -26,7 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/Sanitizers.cmake"
   "../cmake/Warnings.cmake"
   "../examples/CMakeLists.txt"
-  "../examples/geometriacgabc-2/CMakeLists.txt"
+  "../examples/geometriacgabc-3/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -150,7 +150,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "abcg/external/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "abcg/external/gsl/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/geometriacgabc-2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/geometriacgabc-3/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -158,5 +158,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "abcg/CMakeFiles/abcg.dir/DependInfo.cmake"
   "abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
-  "examples/geometriacgabc-2/CMakeFiles/geometriacgabc-2.dir/DependInfo.cmake"
+  "examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/DependInfo.cmake"
   )
