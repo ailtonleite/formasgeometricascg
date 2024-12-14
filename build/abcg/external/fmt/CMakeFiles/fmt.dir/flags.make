@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
+CXX_FLAGS = -g -std=gnu++20
 

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/opt/local/include -I/usr/include/SDL2 -I/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/imgui
 
-CXX_FLAGS = -O3 -DNDEBUG
+CXX_FLAGS = -g
 
