@@ -1436,7 +1436,27 @@ examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/model.cpp.o: ../exampl
   ../abcg/abcgOpenGLShader.hpp \
   ../abcg/abcgShader.hpp \
   ../abcg/abcgOpenGLWindow.hpp \
-  ../abcg/abcgOpenGLFunction.hpp
+  ../abcg/abcgOpenGLFunction.hpp \
+  /usr/include/c++/11/filesystem \
+  /usr/include/c++/11/bits/fs_fwd.h \
+  /usr/include/c++/11/bits/fs_path.h \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/bits/fs_dir.h \
+  /usr/include/c++/11/bits/fs_ops.h
 
 examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/trackball.cpp.o: ../examples/geometriacgabc-3/trackball.cpp \
   /usr/include/stdc-predef.h \
@@ -2894,6 +2914,10 @@ examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/window.cpp.o: ../examp
 
 /usr/include/c++/11/bits/stl_set.h:
 
+../examples/geometriacgabc-3/window.cpp:
+
+../examples/geometriacgabc-3/trackball.cpp:
+
 /usr/include/c++/11/bits/fs_ops.h:
 
 /usr/include/c++/11/bits/fs_dir.h:
@@ -2921,10 +2945,6 @@ examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/window.cpp.o: ../examp
 /usr/include/c++/11/bits/fs_path.h:
 
 /usr/include/c++/11/filesystem:
-
-../examples/geometriacgabc-3/window.cpp:
-
-../examples/geometriacgabc-3/trackball.cpp:
 
 ../abcg/abcgOpenGLFunction.hpp:
 

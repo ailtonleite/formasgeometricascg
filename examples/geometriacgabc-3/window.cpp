@@ -1,5 +1,4 @@
 #include "window.hpp"
-
 #include "imfilebrowser.h"
 
 void Window::onEvent(SDL_Event const &event) {
@@ -50,6 +49,7 @@ void Window::onCreate() {
 
   // Load model
   m_model.loadObj(assetsPath + "tetraedo.obj");
+  m_model.loadDiffuseTexture(assetsPath + "maps/stone.jpg");
   m_model.setupVAO(m_programs.at(m_currentProgramIndex));
 
   m_trianglesToDraw = m_model.getNumTriangles();
@@ -87,10 +87,14 @@ void Window::onPaint() {
   auto const KaLoc{abcg::glGetUniformLocation(program, "Ka")};
   auto const KdLoc{abcg::glGetUniformLocation(program, "Kd")};
   auto const KsLoc{abcg::glGetUniformLocation(program, "Ks")};
+  auto const diffuseTexLoc{abcg::glGetUniformLocation(program, "diffuseTex")};
+  auto const mappingModeLoc{abcg::glGetUniformLocation(program, "mappingMode")};
 
   // Set uniform variables that have the same value for every model
   abcg::glUniformMatrix4fv(viewMatrixLoc, 1, GL_FALSE, &m_viewMatrix[0][0]);
   abcg::glUniformMatrix4fv(projMatrixLoc, 1, GL_FALSE, &m_projMatrix[0][0]);
+  abcg::glUniform1i(diffuseTexLoc, 0);
+  abcg::glUniform1i(mappingModeLoc, m_mappingMode);
 
   auto const lightDirRotated{m_trackBallLight.getRotation() * m_lightDir};
   abcg::glUniform4fv(lightDirLoc, 1, &lightDirRotated.x);
@@ -100,14 +104,15 @@ void Window::onPaint() {
 
   // Set uniform variables for the current model
   abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &m_modelMatrix[0][0]);
-  abcg::glUniform4fv(KaLoc, 1, &m_Ka.x);
-  abcg::glUniform4fv(KdLoc, 1, &m_Kd.x);
-  abcg::glUniform4fv(KsLoc, 1, &m_Ks.x);
-  abcg::glUniform1f(shininessLoc, m_shininess);
 
   auto const modelViewMatrix{glm::mat3(m_viewMatrix * m_modelMatrix)};
   auto const normalMatrix{glm::inverseTranspose(modelViewMatrix)};
   abcg::glUniformMatrix3fv(normalMatrixLoc, 1, GL_FALSE, &normalMatrix[0][0]);
+
+  abcg::glUniform4fv(KaLoc, 1, &m_Ka.x);
+  abcg::glUniform4fv(KdLoc, 1, &m_Kd.x);
+  abcg::glUniform4fv(KsLoc, 1, &m_Ks.x);
+  abcg::glUniform1f(shininessLoc, m_shininess);
 
   m_model.render(m_trianglesToDraw);
 
@@ -126,14 +131,9 @@ void Window::onPaintUI() {
   fileDialogModel.SetTypeFilters({".obj"});
   fileDialogModel.SetWindowSize(scaledWidth, scaledHeight);
 
-#if defined(__EMSCRIPTEN__)
-  auto const assetsPath{abcg::Application::getAssetsPath()};
-  fileDialogModel.SetPwd(assetsPath);
-#endif
-
   // Create a window for the other widgets
   {
-    auto const widgetSize{ImVec2(300, 62)};
+    auto const widgetSize{ImVec2(300, 92)};
     ImGui::SetNextWindowPos(ImVec2(m_viewportSize.x - widgetSize.x - 5, 5));
     ImGui::SetNextWindowSize(widgetSize);
     ImGui::Begin("Widget window", nullptr, ImGuiWindowFlags_NoDecoration);
@@ -208,11 +208,36 @@ void Window::onPaintUI() {
         carregaObj("toroide");
       }
 
+    // UV mapping box
+    {
+      std::vector<std::string> comboItems{"Triplanar", "Cylindrical",
+                                          "Spherical"};
+
+      if (m_model.isUVMapped())
+        comboItems.emplace_back("From mesh");
+
+      ImGui::PushItemWidth(120);
+      if (ImGui::BeginCombo("UV mapping",
+                            comboItems.at(m_mappingMode).c_str())) {
+        for (auto const index : iter::range(comboItems.size())) {
+          auto const isSelected{m_mappingMode == static_cast<int>(index)};
+          if (ImGui::Selectable(comboItems.at(index).c_str(), isSelected))
+            m_mappingMode = index;
+          if (isSelected)
+            ImGui::SetItemDefaultFocus();
+        }
+        ImGui::EndCombo();
+      }
+      ImGui::PopItemWidth();
+    }
+
     ImGui::End();
   }
 
+  
+
   // Create window for light sources
-  if (m_currentProgramIndex < 3) {
+  if (m_currentProgramIndex < 4) {
     auto const widgetSize{ImVec2(222, 180)};
     ImGui::SetNextWindowPos(ImVec2(m_viewportSize.x - widgetSize.x - 5,
                                    m_viewportSize.y - widgetSize.y - 5));
@@ -288,6 +313,8 @@ void Window::carregaObj(std::string obj){
     m_model.loadObj(assetsPath + "toroide.obj");
     m_obj = {0, 0, 0};
   }
+
+  m_model.loadDiffuseTexture(assetsPath + "maps/stone.jpg");
 
   m_model.setupVAO(m_programs.at(m_currentProgramIndex));
 

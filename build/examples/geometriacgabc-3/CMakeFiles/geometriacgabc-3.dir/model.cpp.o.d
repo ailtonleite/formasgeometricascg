@@ -631,4 +631,16 @@ examples/geometriacgabc-3/CMakeFiles/geometriacgabc-3.dir/model.cpp.o: \
  /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLShader.hpp \
  /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgShader.hpp \
  /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLWindow.hpp \
- /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLFunction.hpp
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLFunction.hpp \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h

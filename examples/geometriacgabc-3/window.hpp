@@ -30,9 +30,13 @@ private:
   glm::mat4 m_projMatrix{1.0f};
 
   // Shaders
-  std::vector<char const *> m_shaderNames{"blinnphong", "phong", "gouraud", "depth"};
+  std::vector<char const *> m_shaderNames{"blinnphong", "phong", "gouraud", "texture", "depth"};
   std::vector<GLuint> m_programs;
   int m_currentProgramIndex{};
+
+  // Mapping mode
+  // 0: triplanar; 1: cylindrical; 2: spherical; 3: from mesh
+  int m_mappingMode{};
 
   // Light and material properties
   glm::vec4 m_lightDir{-1.0f, -1.0f, -1.0f, 0.0f};
