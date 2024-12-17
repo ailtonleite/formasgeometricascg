@@ -30,7 +30,7 @@ private:
   glm::mat4 m_projMatrix{1.0f};
 
   // Shaders
-  std::vector<char const *> m_shaderNames{"blinnphong", "phong", "gouraud", "texture", "depth"};
+  std::vector<char const *> m_shaderNames{"blinnphong", "texture", "cubereflect", "depth"};
   std::vector<GLuint> m_programs;
   int m_currentProgramIndex{};
 
@@ -43,14 +43,41 @@ private:
   glm::vec4 m_Ia{1.0f};
   glm::vec4 m_Id{1.0f};
   glm::vec4 m_Is{1.0f};
-  glm::vec4 m_Ka{0.1f, 0.1f, 0.1f, 1.0f};
-  glm::vec4 m_Kd{0.7f, 0.7f, 0.7f, 1.0f};
-  glm::vec4 m_Ks{1.0f};
-  float m_shininess{25.0f};
+  glm::vec4 m_Ka{};
+  glm::vec4 m_Kd{};
+  glm::vec4 m_Ks{};
+  float m_shininess{};
+
+  std::string const m_skyShaderName{"skybox"};
+  GLuint m_skyVAO{};
+  GLuint m_skyVBO{};
+  GLuint m_skyProgram{};
 
   std::array<float, 4> m_color {1.0f, 1.0f, 1.0f, 1.0f};
   std::array<int, 3> m_obj {4, 6, 4}; // Variavel de descrição do obj (vertices, arestas, faces)
+    std::array<glm::vec3, 36> const m_skyPositions{{
+      // Front
+      {-1, -1, +1}, {+1, -1, +1}, {+1, +1, +1},
+      {-1, -1, +1}, {+1, +1, +1}, {-1, +1, +1},
+      // Back
+      {+1, -1, -1}, {-1, -1, -1}, {-1, +1, -1},
+      {+1, -1, -1}, {-1, +1, -1}, {+1, +1, -1},
+      // Right
+      {+1, -1, -1}, {+1, +1, -1}, {+1, +1, +1},
+      {+1, -1, -1}, {+1, +1, +1}, {+1, -1, +1},
+      // Left
+      {-1, -1, +1}, {-1, +1, +1}, {-1, +1, -1},
+      {-1, -1, +1}, {-1, +1, -1}, {-1, -1, -1},
+      // Top
+      {-1, +1, +1}, {+1, +1, +1}, {+1, +1, -1},
+      {-1, +1, +1}, {+1, +1, -1}, {-1, +1, -1},
+      // Bottom
+      {-1, -1, -1}, {+1, -1, -1}, {+1, -1, +1},
+      {-1, -1, -1}, {+1, -1, +1}, {-1, -1, +1}}};
 
+  void createSkybox();
+  void renderSkybox();
+  void destroySkybox() const;
   void carregaObj(std::string obj);
 };
 
