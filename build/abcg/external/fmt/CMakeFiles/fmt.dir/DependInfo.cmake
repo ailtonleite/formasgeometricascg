@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/format.cc" "abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o" "gcc" "abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o.d"
+  "/home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/fmt/format.cc" "abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o" "gcc" "abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o.d"
   )
 
 # Targets to which this target links.

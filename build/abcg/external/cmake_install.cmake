@@ -1,4 +1,4 @@
-# Install script for directory: /home/ailton/ufabc/cg/formasgeometricascg/abcg/external
+# Install script for directory: /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,31 +44,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/imgui/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/imgui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/cppitertools/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/cppitertools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/fmt/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/fmt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/glm/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/ailton/ufabc/cg/formasgeometricascg/build/abcg/external/gsl/cmake_install.cmake")
+  include("/home/ailton/ufabc/cg/fork/formasgeometricascg/build/abcg/external/gsl/cmake_install.cmake")
 endif()
 
