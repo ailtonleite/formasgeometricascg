@@ -1,8 +1,8 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLImage.cpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLImage.cpp \
  /usr/include/stdc-predef.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLImage.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgOpenGLExternal.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLImage.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgOpenGLExternal.hpp \
  /usr/include/GL/glew.h /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -62,7 +62,6 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
@@ -71,7 +70,7 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/c++/11/bits/ranges_base.h \
  /usr/include/c++/11/bits/max_size_type.h /usr/include/c++/11/numbers \
  /usr/include/c++/11/bits/string_view.tcc \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgImage.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgImage.hpp \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \
@@ -92,7 +91,6 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -104,20 +102,13 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/stdlib.h \
- /usr/include/c++/11/cstdlib /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/inttypes.h /usr/include/ctype.h /usr/include/c++/11/math.h \
- /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/strings.h /usr/include/inttypes.h /usr/include/ctype.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -247,9 +238,9 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/itertools.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/accumulate.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/itertools.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/accumulate.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
@@ -278,7 +269,7 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/variant \
  /usr/include/c++/11/bits/parse_numbers.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/c++/11/streambuf /usr/include/c++/11/bits/localefwd.h \
@@ -319,9 +310,9 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/optional \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/batched.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/batched.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iteratoriterator.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_algobase.h \
  /usr/include/c++/11/bits/ranges_util.h \
@@ -359,7 +350,6 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h /usr/include/syscall.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
@@ -371,51 +361,52 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/chain.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/chunked.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/combinations.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/compress.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/count.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/range.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/cycle.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/dropwhile.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/filter.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/enumerate.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/filterfalse.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/groupby.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/imap.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/starmap.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/zip.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/permutations.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/powerset.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/product.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/repeat.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/reversed.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/slice.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/sliding_window.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/chain.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iter_tuples.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/chunked.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/combinations.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/combinations_with_replacement.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/compress.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/count.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/range.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/cycle.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/dropwhile.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/filter.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/enumerate.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/filterfalse.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/groupby.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/imap.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/starmap.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/zip.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/permutations.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/powerset.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/product.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/repeat.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/reversed.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/slice.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/sliding_window.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/sorted.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/takewhile.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/unique_everseen.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/sorted.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/takewhile.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/unique_everseen.hpp \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/cppitertools/unique_justseen.hpp \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/fmt/core.h \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/cppitertools/unique_justseen.hpp \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/fmt/core.h \
  /usr/include/c++/11/cstring \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_algorithm \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_assert \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/span \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_byte \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/gsl_util \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/multi_span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_algorithm \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_assert \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_byte \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/gsl_util \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/multi_span \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/pointers \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/string_span \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/external/gsl/span_ext \
- /home/ailton/ufabc/cg/formasgeometricascg/abcg/abcgException.hpp
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/pointers \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/string_span \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/external/gsl/span_ext \
+ /home/ailton/ufabc/cg/fork/formasgeometricascg/abcg/abcgException.hpp \
+ /usr/include/c++/11/source_location
