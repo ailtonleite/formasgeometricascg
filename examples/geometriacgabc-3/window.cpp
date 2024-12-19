@@ -66,6 +66,7 @@ void Window::onCreate() {
   m_Ka = m_model.getKa();
   m_Kd = m_model.getKd();
   m_Ks = m_model.getKs();
+  
   m_shininess = m_model.getShininess();
 }
 
